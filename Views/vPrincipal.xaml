@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcevallosS2.Views.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            FontSize="20"
+            TextColor="Beige"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Picker x:Name="pkEstudiante" Title="Estudiante">
+            <Picker.Items>
+                <x:String>Jean Cevallos</x:String>
+                <x:String>Carlos Cruz</x:String>
+                <x:String>Lucía Zambrano</x:String>
+                <x:String>David Lara</x:String>
+                <x:String>Sofía Alban</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Nota Seguimiento 1:"/>
+        <Entry x:Name="seguimiento1Entry" Keyboard="Numeric"/>
+
+        <Label Text="Examen 1:"/>
+        <Entry x:Name="examen1Entry" Keyboard="Numeric"/>
+
+        <Label Text="Nota Seguimiento 2:"/>
+        <Entry x:Name="seguimiento2Entry" Keyboard="Numeric"/>
+
+        <Label Text="Examen 2:"/>
+        <Entry x:Name="examen2Entry" Keyboard="Numeric"/>
+
+        <DatePicker x:Name="fecha" Format="MM/dd/yyyy"/>
+
+        <Button x:Name="btnNotas"
+                Text="Calcular Nota"
+                Clicked="btnNotas_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
